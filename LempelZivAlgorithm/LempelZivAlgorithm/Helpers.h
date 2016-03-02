@@ -28,19 +28,21 @@ inline unsigned ByteArraytoUnsignedInt(BYTE array[4])
 
 inline char ByteToChar(BYTE c)
 {
-	if (c > 127)
+	/*if (c > 127)
 	{
 		int temp = (256 - c)*-1;
 		return temp;
 	}
 	else
-		return c;
+		return c;*/
+	return char(c);
 }
 inline BYTE CharToByte(char c)
 {
-	int temp = c;
+	/*int temp = c;
 	if (temp > 0)
 		return temp;
 	else
-		return temp * -2;
+		return temp * -2;*/
+	return BYTE(c);
 }

@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
-#include <map>
 #include <vector>
 #include <fstream>
 #include "Helpers.h"
+#include <map>
 typedef unsigned char BYTE;
 using namespace std;
 

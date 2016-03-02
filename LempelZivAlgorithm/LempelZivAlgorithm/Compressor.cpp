@@ -26,15 +26,15 @@ w = k;
 void Compressor::Compress(string inputFile, string outputFile)
 {
 	#pragma region Initialize
-		unsigned index = 256;
-		ifstream inputFileStream(inputFile.c_str(), ios::in | ios::binary);
-		ofstream outputFileStream(outputFile.c_str(), ios::out | ios::binary);
-		map< vector<BYTE>, unsigned> dictionary;
-		InitializeDictionary(dictionary);
-		char buffer[1];
-		BYTE byteBuffer;
-		vector<BYTE> w;
-#pragma endregion
+	unsigned index = 256;
+	ifstream inputFileStream(inputFile.c_str(), ios::in | ios::binary);
+	ofstream outputFileStream(outputFile.c_str(), ios::out | ios::binary);
+	map< vector<BYTE>, unsigned> dictionary;
+	InitializeDictionary(dictionary);
+	char buffer[1];
+	BYTE byteBuffer;
+	vector<BYTE> w;
+	#pragma endregion
 	while (inputFileStream.read(buffer, 1)) {
 		vector<BYTE> wk = w; wk.push_back(CharToByte(buffer[0])); // wk = w+k
 		if (WkExistsInDictionary(dictionary,wk)) {
@@ -43,7 +43,7 @@ void Compressor::Compress(string inputFile, string outputFile)
 		else {
 			AddWkToDictionary(dictionary, wk, index);
 			OutputW(dictionary, w, index, outputFileStream);
-			w.clear(); w.push_back(byteBuffer); //w=k
+			w.clear(); w.push_back(buffer[0]); //w=k
 		}
 	}
 	OutputW(dictionary, w, index, outputFileStream);
