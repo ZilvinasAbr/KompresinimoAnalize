@@ -17,6 +17,6 @@ private:
 	static void InitializeDictionary(map< vector<BYTE>, unsigned> &dictionary);
 	static bool WkExistsInDictionary(map< vector<BYTE>, unsigned> &dictionary, vector<BYTE> &wk);
 	static void AddWkToDictionary(map<vector<BYTE>, unsigned>& dictionary, vector<BYTE>& wk, int index);
-	static void OutputW(map<vector<BYTE>, unsigned>& dictionary, vector<BYTE>& w, unsigned & index, ofstream & outputFileStream);
+	static void OutputW(map<vector<BYTE>, unsigned>& dictionary, vector<BYTE>& w, unsigned & index, vector<char> & outputBuffer);
 };
 

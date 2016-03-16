@@ -3,7 +3,10 @@
 
 int main()
 {
-	Compressor::Compress("longText.txt", "output.lzw");
-	Decompressor::Decompress("output.lzw", "textDecompressed.txt");
+	string inputFile = "longText.txt";
+	string compressedFile = inputFile + ".huf";
+	string decompressedFile = "decompressed" + inputFile;
+	Compressor::Compress(inputFile, compressedFile);
+	Decompressor::Decompress(compressedFile, decompressedFile);
 	return 0;
 }
