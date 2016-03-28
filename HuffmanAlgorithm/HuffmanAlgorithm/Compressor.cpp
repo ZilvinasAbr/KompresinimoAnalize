@@ -151,7 +151,7 @@ map<BYTE, string> Compressor::CreateLetterStringMap(Node *root, string & nullTer
 	return map;
 }
 
-void Compressor::RecursiveCreateLetterStringMapHelper(map<BYTE, string> map, Node * currentNode, string currentCode, list<string>& listOfOneString)
+void Compressor::RecursiveCreateLetterStringMapHelper(map<BYTE, string> &map, Node * currentNode, string currentCode, list<string>& listOfOneString)
 {
 	if (currentNode == nullptr)
 		return;
