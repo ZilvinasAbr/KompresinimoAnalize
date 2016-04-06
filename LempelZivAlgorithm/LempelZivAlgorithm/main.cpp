@@ -3,7 +3,7 @@
 
 int main()
 {
-	string inputFile = "longText.txt";
+	string inputFile = "skaidres.ppt";
 	string compressedFile = inputFile + ".huf";
 	string decompressedFile = "decompressed" + inputFile;
 	Compressor::Compress(inputFile, compressedFile);

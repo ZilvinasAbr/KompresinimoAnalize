@@ -1,8 +1,2 @@
 ﻿  main.cpp
-  Node.cpp
-  Compressor.cpp
-d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\huffmanalgorithm\huffmanalgorithm\compressor.cpp(74): warning C4018: '<': signed/unsigned mismatch
-d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\huffmanalgorithm\huffmanalgorithm\compressor.cpp(202): warning C4018: '<': signed/unsigned mismatch
-d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\huffmanalgorithm\huffmanalgorithm\compressor.cpp(205): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
   HuffmanAlgorithm.vcxproj -> D:\Studijos\4 semestras\Programu sistemu inzinerija\KompresinimoAnalize\HuffmanAlgorithm\Debug\HuffmanAlgorithm.exe

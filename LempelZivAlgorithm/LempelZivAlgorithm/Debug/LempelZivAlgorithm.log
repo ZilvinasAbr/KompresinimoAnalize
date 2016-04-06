@@ -1,3 +1,5 @@
-﻿  Compressor.cpp
-d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\lempelzivalgorithm\lempelzivalgorithm\compressor.cpp(37): warning C4101: 'byteBuffer': unreferenced local variable
+﻿  main.cpp
+  Decompressor.cpp
+d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\lempelzivalgorithm\lempelzivalgorithm\decompressor.cpp(135): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   LempelZivAlgorithm.vcxproj -> D:\Studijos\4 semestras\Programu sistemu inzinerija\KompresinimoAnalize\LempelZivAlgorithm\Debug\LZWAlgorithm.exe

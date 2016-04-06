@@ -135,6 +135,7 @@ void Decompressor::OutputByteVector(ofstream &outputFileStream, vector<BYTE> &by
 	for (int i = 0; i < byteVector.size(); i++)
 		outputCharArray[i] = ByteToChar(byteVector[i]);
 	outputFileStream.write(outputCharArray, byteVector.size());
+	delete[] outputCharArray;
 }
 
 void Decompressor::AddNewEntry(map< unsigned, vector<BYTE> > &dictionary, BYTE &newByte, vector<BYTE> w, unsigned &index)

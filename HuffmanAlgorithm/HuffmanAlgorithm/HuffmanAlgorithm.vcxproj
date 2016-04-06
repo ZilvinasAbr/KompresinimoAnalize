@@ -143,11 +143,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Compressor.h" />
+    <ClInclude Include="Decompressor.h" />
+    <ClInclude Include="Helper.h" />
     <ClInclude Include="MinimalNode.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Compare.h" />
     <ClCompile Include="Compressor.cpp" />
+    <ClCompile Include="Decompressor.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MinimalNode.cpp" />
     <ClCompile Include="Node.cpp" />
