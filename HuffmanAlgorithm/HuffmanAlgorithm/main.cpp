@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	string folder = "TestData\\";
-	string inputFile = "skaidres.ppt";
+	string inputFile = "dataFile.dat";
 	string compressedFile = inputFile + ".huf";
 	string decompressedFile = "decompressed" + inputFile;
 

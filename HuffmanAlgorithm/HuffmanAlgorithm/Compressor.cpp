@@ -34,21 +34,14 @@ void Compressor::GetCompressedData2(ifstream &inputStream, ofstream &outputStrea
 {
 	const int bufferLength = 1024 * 1024;
 	char *buffer = new char[bufferLength];
-	vector<BYTE*> toCompress;
-	list<bool> compressed;
-	list< vector<bool> > tempExperiment;
+	vector<bool> compressed;
 	vector< vector<bool> > letterBooleansMap = LetterStringToBoolMapper(letterStringMap);
-	while (inputStream.read(buffer, bufferLength))
+	while (inputStream.read(buffer, bufferLength))//skaitome per input faila
 	{
 		for (int i = 0; i < bufferLength;i++)
 		{
 			vector<bool> booleans = letterBooleansMap[BYTE(buffer[i])];
-			compressed.insert(compressed.end(), booleans.begin(), booleans.end());
-			/*string code = letterStringMap[BYTE(buffer[i])];
-			for (char &c : code)
-				compressed.push_back(c == '1' ? true : false);*/
-			//InsertBools(letterStringMap[BYTE(buffer[i])], compressed);
-			
+			compressed.insert(compressed.end(), booleans.begin(), booleans.end());//idedame booleans reiksmes i compressed booleans
 		}
 	}
 	streamsize count = inputStream.gcount();
@@ -56,20 +49,37 @@ void Compressor::GetCompressedData2(ifstream &inputStream, ofstream &outputStrea
 	{
 		vector<bool> booleans = letterBooleansMap[BYTE(buffer[i])];
 		compressed.insert(compressed.end(), booleans.begin(), booleans.end());
-		/*string code = letterStringMap[BYTE(buffer[i])];
-		for (char &c : code)
-			compressed.push_back(c == '1' ? true : false);*/
-		//InsertBools(letterStringMap[BYTE(buffer[i])], compressed);
 	}
 	InsertBools(nullTerminatedCode, compressed);
 	int moreToAdd = 8 - compressed.size() % 8;
 	if(moreToAdd != 8 && moreToAdd != 0)
 		for (int i = 0; i < moreToAdd;i++)
 			compressed.push_back(false);
-	char *chars = new char[compressed.size() / 8];
-	memcpy(chars, &compressed, compressed.size() / 8);
+	//char *chars = new char[compressed.size() / 8];
+
+
+
+
+	vector<char> compressedChars;
+	vector<bool> boolsBuffer;
+	for (int i = 0; i < compressed.size();i++)
+	{
+		boolsBuffer.insert(boolsBuffer.begin(), compressed[i]);
+		if(boolsBuffer.size() == 8)
+		{
+			/*char tempChar;
+			memcpy(&tempChar, &boolsBuffer, 1);*/
+			char tempChar = VectorBoolsToChar(boolsBuffer);
+			compressedChars.push_back(tempChar);
+			boolsBuffer.clear();
+		}
+	}
+	char *pointerToVectorChar = &compressedChars[0];
+	outputStream.write(pointerToVectorChar, compressedChars.size());
+	/*memcpy(chars, &compressed, compressed.size() / 8);
 	outputStream.write(chars, compressed.size() / 8);
 	delete[] chars;
+	delete[] buffer;*/
 	delete[] buffer;
 }
 

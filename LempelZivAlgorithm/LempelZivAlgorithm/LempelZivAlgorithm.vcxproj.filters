@@ -29,10 +29,13 @@
     <ClInclude Include="Compressor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Helpers.h">
+    <ClInclude Include="Decompressor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Decompressor.h">
+    <ClInclude Include="CompressorHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DecompressorHelpers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

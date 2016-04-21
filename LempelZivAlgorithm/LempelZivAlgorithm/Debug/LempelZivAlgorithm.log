@@ -1,5 +1,3 @@
 ﻿  main.cpp
-  Decompressor.cpp
-d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\lempelzivalgorithm\lempelzivalgorithm\decompressor.cpp(135): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+d:\studijos\4 semestras\programu sistemu inzinerija\kompresinimoanalize\lempelzivalgorithm\lempelzivalgorithm\main.cpp(33): warning C4018: '<': signed/unsigned mismatch
   LempelZivAlgorithm.vcxproj -> D:\Studijos\4 semestras\Programu sistemu inzinerija\KompresinimoAnalize\LempelZivAlgorithm\Debug\LZWAlgorithm.exe

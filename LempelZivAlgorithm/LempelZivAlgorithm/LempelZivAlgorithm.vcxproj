@@ -150,7 +150,8 @@
   <ItemGroup>
     <ClInclude Include="Compressor.h" />
     <ClInclude Include="Decompressor.h" />
-    <ClInclude Include="Helpers.h" />
+    <ClInclude Include="CompressorHelpers.h" />
+    <ClInclude Include="DecompressorHelpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

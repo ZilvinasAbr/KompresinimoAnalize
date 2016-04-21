@@ -1,8 +1,8 @@
 ﻿  Decompressor.cpp
-Decompressor.cpp(135): warning C4018: '<': signed/unsigned mismatch
+Decompressor.cpp(28): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  4 of 610 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+  2 of 789 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    9 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   LempelZivAlgorithm.vcxproj -> D:\Studijos\4 semestras\Programu sistemu inzinerija\KompresinimoAnalize\LempelZivAlgorithm\Release\LZWAlgorithm.exe

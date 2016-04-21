@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HuffmanAlgorithm", "HuffmanAlgorithm\HuffmanAlgorithm.vcxproj", "{5B3BF3E4-7E86-4A99-8327-FBA3399EA740}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HuffmanAlgorithm2", "HuffmanAlgorithm2\HuffmanAlgorithm2.vcxproj", "{2E38DA11-A960-4507-808C-B5A45A6C6DB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{5B3BF3E4-7E86-4A99-8327-FBA3399EA740}.Release|x64.Build.0 = Release|x64
 		{5B3BF3E4-7E86-4A99-8327-FBA3399EA740}.Release|x86.ActiveCfg = Release|Win32
 		{5B3BF3E4-7E86-4A99-8327-FBA3399EA740}.Release|x86.Build.0 = Release|Win32
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Debug|x64.ActiveCfg = Debug|x64
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Debug|x64.Build.0 = Debug|x64
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Debug|x86.Build.0 = Debug|Win32
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Release|x64.ActiveCfg = Release|x64
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Release|x64.Build.0 = Release|x64
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Release|x86.ActiveCfg = Release|Win32
+		{2E38DA11-A960-4507-808C-B5A45A6C6DB5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
