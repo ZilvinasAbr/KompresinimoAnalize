@@ -15,7 +15,7 @@ Decompressor::~Decompressor()
 
 void Decompressor::Decompress(vector<bool> &encodedData, vector<char> &decodedData)
 {
-	vector< vector<char> > dictionary = InitializeDictionary();
+	vector< vector<char> > dictionary = InitializeDictionary(); //Initialize dictionary
 	vector<char> outputSequence;
 	vector<char> entry;
 	int decimalCounter = 255;
